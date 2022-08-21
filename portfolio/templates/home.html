@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+{% block content %}
+<!-- Intro -->
+<div id="intro">
+	<h1>Georges Amine Dev</h1>
+	<p>A gallery of my most important projects as a bigenner developer
+	<ul class="actions">
+		<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+	</ul>
+</div>
+
+<!-- Header -->
+<header id="header">
+	<a href="{{url_for('home')}}" class="logo">Georges Amine Dev</a>
+</header>
+
+<!-- Main -->
+<div id="main">
+
+	<!-- Featured Post -->
+		<article class="post featured">
+			<header class="major">
+				<h2><a href="{{url_for('project',project_id=1)}}">Project 1 title</a></h2>
+				<p>This is the descripption of project 1 ...</p>
+			</header>
+			<a href="#" class="image main"><img src="{{ url_for('static', filename='images/pic01.jpg') }}" alt="" /></a>
+			<ul class="actions special">
+				<li><a href="#" class="button large">Demo</a>
+					<a href="#" class="button large">Code</a></li>
+			</ul>
+		</article>
+
+	<!-- Posts -->
+		<section class="posts">
+			<article>
+				<header>
+					<h2><a href="{{url_for('project',project_id=2)}}">Project 2 title</a></h2>
+				</header>
+				<a href="#" class="image fit"><img src="{{ url_for('static', filename='images/pic02.jpg') }}" alt="" /></a>
+				<p>This is the descripption of project 2</p>
+				<ul class="actions special">
+					<li><a href="#" class="button large">Demo</a>
+						<a href="#" class="button large">Code</a></li>
+				</ul>
+			</article>
+			<article>
+				<header>
+					<h2><a href="{{url_for('project',project_id=3)}}">Project 3 title</a></h2>
+				</header>
+				<a href="#" class="image fit"><img src="{{ url_for('static', filename='images/pic03.jpg') }}" alt="" /></a>
+				<p>This is the descripption of project 3 ...</p>
+				<ul class="actions special">
+					<li><a href="#" class="button large">Demo</a>
+						<a href="#" class="button large">Code</a></li>
+				</ul>
+			</article>
+		</section>
+</div>
+{% endblock content %}
+
+
+				
+
+				
