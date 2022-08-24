@@ -6,6 +6,9 @@ __pycache__/
 # C extensions
 *.so
 
+# Macv
+.DS_Store
+
 # Config file
 config.py
 
